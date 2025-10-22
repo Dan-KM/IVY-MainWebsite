@@ -1,3 +1,58 @@
+/* Start of Immuno CSS */
+.immunobgimage {
+  background-image: url('assets/vaccine.jpg'); /* Replace with your image path */
+  background-size: cover; /* Ensures the image covers the entire element */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  align-items: center; /* Vertically centers content */
+  justify-content: center; /* Horizontally centers content */
+}
+#immuno_problem {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#immuno_problem h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.immuno-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.problem-item {
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: left;
+}
+
+.problem-item h3 {
+    font-size: 1.5em;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.problem-item p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* End of Immuno CSS */
+
+
+
+
 /* Reset and Base Styles */
 * {
     margin: 0;
