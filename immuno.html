@@ -17,6 +17,17 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
+    <style>
+        .team-member {
+            margin-bottom: 30px;
+        }
+        .team-member img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+    </style>
+
 </head>
 <body>
 <nav style="background-color: #9cde9d" class="navbar navbar-expand-sm navbar-dark sticky-top">
@@ -43,10 +54,10 @@
                 <a style="color: #040694; font-size: larger;" class="nav-link" href="#immuno_solution">Our Solution</a>
             </li>
             <li style="font-family: 'Agency FB',serif; font-size: x-large; font-weight: bolder" class="nav-item">
-                <a style="color: #040694; font-size: larger;" class="nav-link" href="#">Our Team</a>
+                <a style="color: #040694; font-size: larger;" class="nav-link" href="#immuno_team">Our Team</a>
             </li>
             <li style="font-family: 'Agency FB',serif; font-size: x-large; font-weight: bolder" class="nav-item">
-                <a style="color: #040694; font-size: larger;" class="nav-link" href="#">Contact Us</a>
+                <a style="color: #040694; font-size: larger;" class="nav-link" href="#immuno_contact">Contact Us</a>
             </li>
         </ul>
     </div>
@@ -69,6 +80,7 @@ Helping health workers and mothers stay on track with child immunizations throug
             </div>
         </div>
     </div>
+</section>
 <!-- End of Immuno Home Section -->
 
 <!-- Start of Immuno Problem Section -->
@@ -94,29 +106,149 @@ Helping health workers and mothers stay on track with child immunizations throug
 <!-- Start of Immuno Solution Section  -->
 
 <section id="immuno_solution">
-    <div class="immuno-container" style="background-color: #9cde9d;">
-        <h2 style="font-family: Georgia, serif; color: #000435;">Comprehesive Solution</h2>
-    </div>
-    <div class="container">
+    <div style="background-color: #9cde9d">
+         <div>
+        <h2 style="font-family: Georgia, serif; color: #000435; text-align: center;">Comprehesive Solution</h2>
+        </div>
         <div>
-           <h4></h4> 
+        <p style="text-align:center;font-family: Georgia,serif; color: black">Our platform serves every stakeholder in the vaccination ecosystem with tailored tools and features.</p>
+        </div>
+    
+
+    <div class="container">
+     <div class="row">
+
+        <div class="col-12 col-sm-6 col-md-4 mb-4 d-flex justify-content-center">
+            <ul>
+                <h3>For Community Health Workers</h3>
+                <li>View child's vaccination records</li>
+                <li>Check appointment schedules</li>
+                <li>Access via USSD (for non-smartphone users)</li>
+                <li>Receive timely SMS reminders</li>
+            </ul>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 mb-4 d-flex justify-content-center">
+            <ul>
+                <h3>For Mothers</h3>
+                <li>View child's vaccination records</li>
+                <li>Check appointment schedules</li>
+                <li>Access via USSD (for non-smartphone users)</li>
+                <li>Receive timely SMS reminders</li>
+            </ul>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 mb-4 d-flex justify-content-center">
+            <ul>
+                <h3>Information Hub</h3>
+                <li>Easy-to-read info on vaccine benefits & types</li>
+                <li>Educational content for better health outcomes</li>
+                <li>Multilingual support for diverse communities</li>
+                <li>Offline access to essential information</li>
+            </ul>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 mb-4 d-flex justify-content-center">
+            <ul>
+                <h3>Analytics Dashboard</h3>
+                <li>Monthly vaccination statistics</li>
+                <li>Missed vs. completed vaccinations tracking</li>
+                <li>Total clients tracked and managed</li>
+                <li>Custom reports for hospitals & NGOs</li>
+            </ul>
         </div>
 
     </div>
+    </div>
+</div>
+    
 </section>
 <!-- End of Immuno Solution Section -->
 
-    <script>
-        const loader = document.getElementById("preloader");
-        window.addEventListener("load", function () {
-            // Delay hiding the preloader for 3 seconds after the page loads
-              setTimeout(function () {
-            loader.style.display = "none";
-                  let content;
-                  content.style.display = "block"; // Show the content
-            }, 1000); // 3000ms = 3 seconds delay
-        });
-    </script>
+<!-- Start of Immuno Team Section -->
+
+<Section id="immuno_team">
+    <div class="container mt-5">
+        <h2 class="text-center" style="font-family: Georgia, serif; color: #000435;">Our Development Team</h2>
+        <div class="row text-center">
+            <div class="col-md-4 team-member">
+                <img src="assets/man1.jpg" alt="Team Member 1">
+                <h4>David Zivai</h4>
+                <p>Founder & CEO</p>
+            </div>
+            <div class="col-md-4 team-member">
+                <img src="assets/man1.jpg" alt="Team Member 2">
+                <h4>Erica Aketch</h4>
+                <p>Project Manager</p>
+            </div>
+            <div class="col-md-4 team-member">
+                <img src="assets/man1.jpg" alt="Team Member 3">
+                <h4>Ramadhan Abdilatif</h4>
+                <p>Lead Programmer</p>
+            </div>
+            <div class="col-md-4 team-member">
+                <img src="assets/man1.jpg" alt="Team Member 3">
+                <h4>Alma</h4>
+                <p>Outreach Coordinator</p>
+            </div>
+            
+        </div>
+    </div>
+</Section>
+
+<!-- End of Immuno Team Section  -->
+
+<!-- Start of Immuno Contact Section  -->
+ <Section id="immuno_contact">
+    <div class="container">
+    <h2 class="text-center" style="font-family: Georgia, serif; color: #000435;">Contact Information</h2>
+    <div class="col-lg-12">
+                        <div class="card mt-4 border-0 mb-4">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4">
+                                    <div class="card-body d-flex align-items-center c-detail pl-0">
+                                        <div class="mr-3 align-self-center">
+                                            <span style="font-size: 48px; color: #e84808  " class="bi bi-geo-alt"></span>
+                                        </div>
+                                        <div class="">
+                                            <h6 class="font-weight-medium">Address</h6>
+                                            <p class="">Lang'ata
+                                                <br> Nairobi, Kenya</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4">
+                                    <div class="card-body d-flex align-items-center c-detail">
+                                        <div class="mr-3 align-self-center">
+                                            <span style="font-size: 48px; color: #e84808  " class="bi bi-phone"></span>
+                                        </div>
+                                        <div class="">
+                                            <h6 class="font-weight-medium">Phone</h6>
+                                            <p class="">+254 715 550 005
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4">
+                                    <div class="card-body d-flex align-items-center c-detail">
+                                        <div class="mr-3 align-self-center">
+                                            <span style="font-size: 48px; color: #e84808  " class="bi bi-envelope"></span>
+                                        </div>
+                                        <div class="">
+                                            <h6 class="font-weight-medium">Email</h6>
+                                            <p class="">
+                                                immuno@gmail.com
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+  </div>  
+</Section>
+<!-- End of Immuno Contact Section  -->
+
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
@@ -128,8 +260,6 @@ Helping health workers and mothers stay on track with child immunizations throug
         });
     </script>
     </div>
-
-</section>
     
 </body>
 </html>
