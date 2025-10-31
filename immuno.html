@@ -47,6 +47,8 @@
 <section id="immuno_home">
 <div>
     <div class="immunobgimage">
+        <div class="bg-slide active" style="background-image: url('assets/vaccine.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('assets/immuno_bg.jpg');"></div>
         <div id="content" class="container">
             <h1 class="text-white text-center" style="font-family: Georgia,serif">Immuno</h1>
             <p class="text-center" style="font-style: italic; font-family: Georgia,serif; font-size:40px; color: #040694">Smart Vaccination <span class="auto-type"></span></p>
@@ -117,6 +119,23 @@ Helping health workers and mothers stay on track with child immunizations throug
             typeSpeed: 150,
             backSpeed: 150,
             loop: false
+        });
+    </script>
+
+    <script>
+        // Slideshow functionality for background images
+        $(document).ready(function() {
+            const slides = $('.bg-slide');
+            let currentIndex = 0;
+
+            function showNextSlide() {
+                slides.removeClass('active');
+                currentIndex = (currentIndex + 1) % slides.length;
+                slides.eq(currentIndex).addClass('active');
+            }
+
+            // Change slide every 2 seconds
+            setInterval(showNextSlide, 2000);
         });
     </script>
     </div>
