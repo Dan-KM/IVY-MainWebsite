@@ -80,6 +80,21 @@
     color: #555;
 }
 
+.tick-list {
+            list-style-type: none; /* Remove default bullets */
+            padding: 0;
+        }
+        .tick-list li {
+            position: relative;
+            padding-left: 25px; /* Space for the tick */
+        }
+        .tick-list li::before {
+            content: '✔'; /* Unicode character for tick */
+            position: absolute;
+            left: 0;
+            color: green; /* Color of the tick */
+        }
+
 /* End of Immuno CSS */
 
 
