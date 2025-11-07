@@ -37,6 +37,16 @@
   opacity: 1;
 }
 
+.slide-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+}
+
 #immuno_home #content {
   position: relative;
   z-index: 2;

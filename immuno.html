@@ -47,20 +47,56 @@
 <section id="immuno_home">
 <div>
     <div class="immunobgimage">
-        <div class="bg-slide active" style="background-image: url('assets/vaccine.jpg');"></div>
-        
-        <div class="bg-slide" style="background-image: url('assets/Immuno1.jpg');"></div>
-        <div class="bg-slide" style="background-image: url('assets/Immuno2.jpg');"></div>
-        <div class="bg-slide" style="background-image: url('assets/Immuno3.jpg');"></div>
-        <div class="bg-slide" style="background-image: url('assets/Immuno4.jpg');"></div>
-        <div class="bg-slide" style="background-image: url('assets/Immuno5.jpg');"></div>
-        <div class="bg-slide" style="background-image: url('assets/Immuno6.jpg');"></div>
-        <div class="bg-slide" style="background-image: url('assets/Immuno7.jpg');"></div>
-        <div id="content" class="container">
-            <h1 class="text-white text-center" style="font-family: Georgia,serif">Immuno</h1>
-            <p class="text-center" style="font-style: italic; font-family: Georgia,serif; font-size:40px; color: #040694">Smart Vaccination <span class="auto-type"></span></p>
+        <div class="bg-slide active" style="background-image: url('assets/vaccine.jpg');">
+            <div class="slide-content">
+                <h1 class="text-white text-center" style="font-family: Georgia,serif">Immuno</h1>
+                <p class="text-center" style="font-style: italic; font-family: Georgia,serif; font-size:40px; color: #040694">Smart Vaccination <span class="auto-type"></span></p>
+            </div>
         </div>
-    </div> <br>
+
+        <div class="bg-slide" style="background-image: url('assets/Immuno1.jpg');">
+            <div class="slide-content">
+                <h1 class="text-white text-center" style="font-family: Georgia,serif">Immuno</h1>
+                <p class="text-center" style="font-style: italic; font-family: Georgia,serif; font-size:40px; color: #040694">Vaccines protect children from preventable diseases.</p>
+            </div>
+        </div>
+        <div class="bg-slide" style="background-image: url('assets/Immuno2.jpg');">
+            <div class="slide-content">
+                <h1 class="text-white text-center" style="font-family: Georgia,serif">Immuno</h1>
+                <p class="text-center" style="font-style: italic; font-family: Georgia,serif; font-size:40px; color: #040694">Timely immunizations save lives and build community health.</p>
+            </div>
+        </div>
+        <div class="bg-slide" style="background-image: url('assets/Immuno3.jpg');">
+            <div class="slide-content">
+                <h1 class="text-white text-center" style="font-family: Georgia,serif">Immuno</h1>
+                <p class="text-center" style="font-style: italic; font-family: Georgia,serif; font-size:40px; color: #040694">Stay on track with vaccination schedules for your child's safety.</p>
+            </div>
+        </div>
+        <div class="bg-slide" style="background-image: url('assets/Immuno4.jpg');">
+            <div class="slide-content">
+                <h1 class="text-white text-center" style="font-family: Georgia,serif">Immuno</h1>
+                <p class="text-center" style="font-style: italic; font-family: Georgia,serif; font-size:40px; color: #040694">Immunization programs ensure healthier futures for all.</p>
+            </div>
+        </div>
+        <div class="bg-slide" style="background-image: url('assets/Immuno5.jpg');">
+            <div class="slide-content">
+                <h1 class="text-white text-center" style="font-family: Georgia,serif">Immuno</h1>
+                <p class="text-center" style="font-style: italic; font-family: Georgia,serif; font-size:40px; color: #040694">Empowering mothers and health workers through accessible tools.</p>
+            </div>
+        </div>
+        <div class="bg-slide" style="background-image: url('assets/Immuno6.jpg');">
+            <div class="slide-content">
+                <h1 class="text-white text-center" style="font-family: Georgia,serif">Immuno</h1>
+                <p class="text-center" style="font-style: italic; font-family: Georgia,serif; font-size:40px; color: #040694">Reliable reminders help prevent missed vaccinations.</p>
+            </div>
+        </div>
+        <div class="bg-slide" style="background-image: url('assets/Immuno7.jpg');">
+            <div class="slide-content">
+                <h1 class="text-white text-center" style="font-family: Georgia,serif">Immuno</h1>
+                <p class="text-center" style="font-style: italic; font-family: Georgia,serif; font-size:40px; color: #040694">AI-powered tracking for smarter healthcare delivery.</p>
+            </div>
+        </div>
+    </div>
     <div id="content" class="container">
         <h3 style=" font-family: Georgia,serif; color: black" class="text-center border-bottom mb-4">Welcome to our Immuno App</h3>
       <p style=" font-family: Georgia,serif; color: black">For Every Community
@@ -134,11 +170,33 @@ Helping health workers and mothers stay on track with child immunizations throug
         $(document).ready(function() {
             const slides = $('.bg-slide');
             let currentIndex = 0;
+            const slideTexts = [
+                'Smart Vaccination <span class="auto-type"></span>',
+                'Vaccines protect children from preventable diseases.',
+                'Timely immunizations save lives and build community health.',
+                'Stay on track with vaccination schedules for your child\'s safety.',
+                'Immunization programs ensure healthier futures for all.',
+                'Empowering mothers and health workers through accessible tools.',
+                'Reliable reminders help prevent missed vaccinations.',
+                'AI-powered tracking for smarter healthcare delivery.'
+            ];
+            const textElement = $('#content p');
 
             function showNextSlide() {
                 slides.removeClass('active');
                 currentIndex = (currentIndex + 1) % slides.length;
                 slides.eq(currentIndex).addClass('active');
+
+                // Update the text
+                textElement.html(slideTexts[currentIndex]);
+
+                // Handle typed animation for first slide
+                if (currentIndex === 0) {
+                    typed.reset();
+                    typed.start();
+                } else {
+                    typed.stop();
+                }
             }
 
             // Change slide every 2 seconds
