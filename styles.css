@@ -79,11 +79,15 @@
     text-align: left;
 }
 
-.problem-item h3 {
+.problem-item:hover{
+    background-color:#04a699;
+}
+
+/* .problem-item h3 {
     font-size: 1.5em;
     color: #007BFF;
     margin-bottom: 10px;
-}
+} */
 
 .problem-item p {
     font-size: 1em;
