@@ -69,7 +69,7 @@
         <div class="bg-slide active" style="background-image: url('assets/vaccine.jpg');">
             <div class="slide-content">
                 <h1 class="text-white text-center" style="font-family: Georgia,serif">Immuno</h1>
-                <p class="text-center" style="font-style: italic; font-family: Georgia,serif; font-size:40px; color: #040694">Smart Vaccination <span class="auto-type"></span></p>
+                <p class="text-center" style="font-style: italic; font-family: Georgia,serif; font-size:40px; color: #040694">Smart Vaccination Tracking and Reminders <span class="auto-type"></span></p>
             </div>
         </div>
 
@@ -293,15 +293,7 @@ Helping health workers and mothers stay on track with child immunizations throug
 <!-- End of Immuno Contact Section  -->
 
 
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-        const typed = new Typed(".auto-type", {
-            strings: ["Tracking and Reminders."],
-            typeSpeed: 150,
-            backSpeed: 150,
-            loop: false
-        });
-    </script>
+
 
     <script>
         // Slideshow functionality for background images
@@ -309,7 +301,7 @@ Helping health workers and mothers stay on track with child immunizations throug
             const slides = $('.bg-slide');
             let currentIndex = 0;
             const slideTexts = [
-                'Smart Vaccination <span class="auto-type"></span>',
+                'Smart Vaccination Tracking and Reminders.',
                 'Vaccines protect children from preventable diseases.',
                 'Timely immunizations save lives and build community health.',
                 'Stay on track with vaccination schedules for your child\'s safety.',
@@ -327,14 +319,6 @@ Helping health workers and mothers stay on track with child immunizations throug
 
                 // Update the text
                 textElement.html(slideTexts[currentIndex]);
-
-                // Handle typed animation for first slide
-                if (currentIndex === 0) {
-                    typed.reset();
-                    typed.start();
-                } else {
-                    typed.stop();
-                }
             }
 
             // Change slide every 2 seconds
